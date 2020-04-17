@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-if [[ -f $1/*.cbl || -f $1/*.cob || -f $1/*.cpy]]; then
-  echo "COBOL" && exit 0
-else
-  echo "no" && exit 1
-fi
+BUILD_DIR=$1
+cd $BUILD_DIR
+ls -U *.cob > /dev/null 2>&1 && (echo "COBOL") || exit 1
