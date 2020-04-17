@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [[ -f $1/*.cbl || -f $1/*.cob || -f $1/*.cpy]]; then
+  echo "COBOL" && exit 0
+else
+  echo "no" && exit 1
+fi
