@@ -3,3 +3,5 @@ wget https://sourceforge.net/projects/open-cobol/files/open-cobol/2.0/open-cobol
 tar xf open-cobol-2.0-feb2012.tar.gz
 cd open-cobol-2.0
 ./configure
+make
+make install
